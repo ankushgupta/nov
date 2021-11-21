@@ -1,0 +1,199 @@
+[root@ip-172-31-34-63 nov]# history 
+    1  clear
+    2  yum install git -y
+    3  clear
+    4  git clone https://github.com/ankushgupta/nov.git
+    5  ls -l
+    6  cd nov/
+    7  ls -la
+    8  cd ..
+    9  mkdir test
+   10  ls -l
+   11  cd test
+   12  ls -l
+   13  ls -la
+   14  git init .
+   15  ls -la
+   16  cd ..
+   17  ls -l
+   18  cd nov/
+   19  ls -l
+   20  ls-l
+   21  ls -la
+   22  echo "helloworld"
+   23  echo "helloworld" > file1
+   24  ls -l
+   25  cat file1 
+   26  git status
+   27  git add file1
+   28  git status
+   29  git commit -m "first commit"
+   30  git status
+   31  git push 
+   32  ssh-keygen 
+   33  ls -la ~/.ssh/
+   34  cat ~/.ssh/id_rsa.pub 
+   35  cd ..
+   36  rm -rf nov/
+   37  git clone git@github.com:ankushgupta/nov.git
+   38  cd nov/
+   39  ls -l
+   40  echo "helloworld" > file1
+   41  ls -l
+   42  git add file1
+   43  git commit -m "first commit"
+   44  git push
+   45  git config --list
+   46  git log
+   47  git config user.name "Ankur"
+   48  git config user.email "Ankur@gmail.com"
+   49  git config --list
+   50  vi file1
+   51  git add file1 
+   52  git commit -m "testing name and email"
+   53  git log
+   54  git push
+   55  git remote -v
+   56  cd ..
+   57  ls -l
+   58  cd teest
+   59  cd test
+   60  ls -l
+   61  git status
+   62  git remote -v
+   63  git remote add origin git@github.com:ankushgupta/nov.git
+   64  git remote -v
+   65  cd ..
+   66  cd nov/
+   67  ls -l
+   68  vim file1
+   69  git add file1
+   70  git commit -m "testing commit"
+   71  git push
+   72  git log
+   73  git pull
+   74  ls -l
+   75  git push
+   76  pwd
+   77  git branch
+   78  git branch -a
+   79  git checkout -b sachin
+   80  git branch -a
+   81  ls -l
+   82  echo "creating new file" > file2
+   83  echo "creating new file" > file3
+   84  git status
+   85  git add .
+   86  git status
+   87  git commit -m "testing branch creation"
+   88  git push origin sachin
+   89  git branch -a
+   90  git checkout main
+   91  git branch 
+   92  git merge sachin
+   93  ls -l
+   94  git push
+   95  git checkout sachin
+   96  echo "testing pull request" > file4
+   97  git add file4
+   98  git commit -m "testing pull request"
+   99  git push 
+  100  git push --set-upstream origin sachin
+  101  git checkout main
+  102  ls -l
+  103  git pull
+  104  ls -l
+  105  echo "testing git stash" > file5
+  106  git checkout sachin
+  107  git checkout main
+  108  ls -l
+  109  git add file5
+  110  git checkout sachin
+  111  ls -l
+  112  git checkout main
+  113  echo "testing git stash" > file6
+  114  git stash
+  115  ls -l
+  116  git checkout sachin
+  117  ls -l
+  118  git branch 
+  119  git checkout main
+  120  ls -l
+  121  git pop
+  122  git stash pop
+  123  ls -l
+  124  git log
+  125  git revert 97c571bb46035d537429bc79fae6b8d41869bb33
+  126  git status
+  127  git add .
+  128  git commit -m "testing file6"
+  129  git push
+  130  git revert 97c571bb46035d537429bc79fae6b8d41869bb33
+  131  git pull
+  132  git status
+  133  git push
+  134  git add .
+  135  git commit -m "deleting file"
+  136  git push
+  137  git rm file2
+  138  git push
+  139  git commit -m "deleting file"
+  140  git push
+  141  git log
+  142  ls -l
+  143  git log
+  144  git reset --hard c8f0dee795434aec0efa4948223fbdbac38cb88e
+  145  git log
+  146  ls -l
+  147  git diff 97c571bb46035d537429bc79fae6b8d41869bb33 1c7e51f446fdb28cae73d7d91c22a18e782b79df
+  148  cd nov/
+  149  git log
+  150  git log --graph --pretty=oneline
+  151  git branch
+  152  git checkout -b rahul
+  153  git push origin rahul
+  154  git checkout main
+  155  git pull
+  156  ls -l
+  157  git status
+  158  rm -rf "-l"
+  159  echo "testing rebase" > file7
+  160  git add file7
+  161  git commit -m "testing rebase"
+  162  git push 
+  163  git checkout rahul
+  164  ls -l
+  165  git pull
+  166  git log
+  167  git rebase main
+  168  ls -l
+  169  git log --graph --pretty=online
+  170  git log --graph --pretty=oneline
+  171  git log
+  172  git checkout main
+  173  git pull
+  174  git checkout rahul
+  175  ls -l
+  176  git rebase main
+  177  ls -l
+  178  git log
+  179  git checkout main
+  180  git checkout -b featureA
+  181  vi file9
+  182  git add file9
+  183  git commit -m "new file9"
+  184  git push origin featureA
+  185  git checkout main
+  186  git checkout -b featureB
+  187  vi file9
+  188  git add file9
+  189  git commit -m "adding new file9"
+  190  git push origin featureB
+  191  git checkout main
+  192  git pull
+  193  git merge featureB
+  194  vim file9
+  195  git add file9
+  196  git commit -m "merging featureB"
+  197  git push 
+  198  history 
