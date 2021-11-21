@@ -1,0 +1,36 @@
+199  yum install maven
+  200  mvn version
+  201  mvn --version
+  202  cd
+  203  git clone git@github.com:ankushgupta/hello-world-war.git
+  204  ls -l
+  205  cd hello-world-war/
+  206  ls -l
+  207  mvn compike
+  208  mvn compile
+  209  mvn package
+  210  ls -l
+  211  cd target/
+  212  ls -
+  213  ls -l
+  214  cd ..
+  215  ls -l
+  216  mvn clean
+  217  ls -l
+  218  ls -la
+  219  cd ..
+  220  ls -la
+  221  cd .m2
+  222  ls -l
+  223  cd repository/
+  224  ls -l
+  225  cd
+  226  mvn --version
+  227  cd /usr/share/
+  228  ls -l
+  229  cd maven
+  230  ls -l
+  231  cd conf/
+  232  ls -l
+  233  vi settings.xml 
+  234  history 
