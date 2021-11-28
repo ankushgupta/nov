@@ -1,0 +1,91 @@
+ 1  apt-get update
+    2  apt-get install     ca-certificates     curl     gnupg     lsb-release
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    4  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    5  apt-get update
+    6  apt-get install docker-ce docker-ce-cli containerd.io
+    7  docker ps
+    8  docker version
+    9  docker images
+   10  docker search ubuntu
+   11  docker pull ubuntu
+   12  docker pull ubuntu:18.04
+   13  docker images
+   14  docker run -it ubuntu:18.04 /bin/bash
+   15  docker ps
+   16  docker ps -a
+   17  docker run -dit ubuntu:18.04 /bin/bash
+   18  docker ps
+   19  ps -ef| grep -i docker
+   20  docker ps
+   21  ps -ef| grep -i 85140fab2012
+   22  docker exec -it 85140fab2012 /bin/bash
+   23  docker ps
+   24  docker pull httpd
+   25  docker ps
+   26  docker run -d httpd
+   27  docker ps
+   28  docker exec -it c5c293f702c3 /bin/bash
+   29  ps -ef | grep -i container
+   30  kill -9 15078
+   31  ps -ef | grep -i container
+   32  docker ps
+   33  ps -ef | grep -i container
+   34  docker ps
+   35  docker ps -a
+   36  ps -ef | grep -i docker
+   37  systemctl restart docker
+   38  docker ps
+   39  docker run -d httpd
+   40  docker ps
+   41  ps -ef | grep -i docker
+   42  ps -ef | grep -i container
+   43  date
+   44  kill -9 15946
+   45  ps -ef | grep -i container
+   46  docker ps
+   47  kill -9 2154
+   48  docker ps
+   49  free -m
+   50  docker ps
+   51  ps -ef | grep -i container
+   52  docker ps
+   53  docker  ps -a
+   54  docker run -it ubuntu:18.04 /bin/bash
+   55  docker run -itd ubuntu:18.04 /bin/bash
+   56  docker ps
+   57  docker stop 33680043cbec
+   58  docker ps
+   59  docker ps -a
+   60  docker start 33680043cbec
+   61  docker ps
+   62  docker run -itd ubuntu:18.04 /bin/bash
+   63  docker ps
+   64  docker exec -it d72e211e1e44 /bin/bash
+   65  docker run -itd --name sudhanshu  ubuntu:18.04 /bin/bash
+   66  docker ps
+   67  docker stop 33680043cbec e0d52c0b9560 d6d441169a90
+   68  docker ps
+   69  docker run -itd --name xyz  ubuntu:18.04 /bin/bash
+   70  docker ps
+   71  history 
+   72  docker ps
+   73  ps -ef | grep -i docker
+   74  docker inspect xyz
+   75  ifconfig
+   76  apt install net-tools
+   77  ifconfig
+   78  docker ps
+   79  docker stop d72e211e1e44
+   80  ifconfig
+   81  docker pdocker p
+   82  docker ps
+   83  docker run -d httpd
+   84  docker ps
+   85  docker logs 0861eaa67b0b
+   86  docker ps 
+   87  docker kill 8870c262abec
+   88  docker ps
+   89  docker ps -a
+   90  history 
