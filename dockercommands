@@ -1,91 +1,187 @@
- 1  apt-get update
+root@ip-172-31-4-137:~# history 
+    1  apt-get update
     2  apt-get install     ca-certificates     curl     gnupg     lsb-release
     3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
     4  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    5  apt-get update
-    6  apt-get install docker-ce docker-ce-cli containerd.io
-    7  docker ps
-    8  docker version
-    9  docker images
-   10  docker search ubuntu
-   11  docker pull ubuntu
-   12  docker pull ubuntu:18.04
-   13  docker images
-   14  docker run -it ubuntu:18.04 /bin/bash
-   15  docker ps
-   16  docker ps -a
-   17  docker run -dit ubuntu:18.04 /bin/bash
-   18  docker ps
-   19  ps -ef| grep -i docker
-   20  docker ps
-   21  ps -ef| grep -i 85140fab2012
-   22  docker exec -it 85140fab2012 /bin/bash
-   23  docker ps
-   24  docker pull httpd
-   25  docker ps
-   26  docker run -d httpd
-   27  docker ps
-   28  docker exec -it c5c293f702c3 /bin/bash
-   29  ps -ef | grep -i container
-   30  kill -9 15078
-   31  ps -ef | grep -i container
-   32  docker ps
-   33  ps -ef | grep -i container
-   34  docker ps
-   35  docker ps -a
-   36  ps -ef | grep -i docker
-   37  systemctl restart docker
-   38  docker ps
-   39  docker run -d httpd
-   40  docker ps
-   41  ps -ef | grep -i docker
-   42  ps -ef | grep -i container
-   43  date
-   44  kill -9 15946
-   45  ps -ef | grep -i container
-   46  docker ps
-   47  kill -9 2154
-   48  docker ps
-   49  free -m
-   50  docker ps
-   51  ps -ef | grep -i container
-   52  docker ps
-   53  docker  ps -a
-   54  docker run -it ubuntu:18.04 /bin/bash
-   55  docker run -itd ubuntu:18.04 /bin/bash
-   56  docker ps
-   57  docker stop 33680043cbec
-   58  docker ps
-   59  docker ps -a
-   60  docker start 33680043cbec
-   61  docker ps
-   62  docker run -itd ubuntu:18.04 /bin/bash
-   63  docker ps
-   64  docker exec -it d72e211e1e44 /bin/bash
-   65  docker run -itd --name sudhanshu  ubuntu:18.04 /bin/bash
-   66  docker ps
-   67  docker stop 33680043cbec e0d52c0b9560 d6d441169a90
-   68  docker ps
-   69  docker run -itd --name xyz  ubuntu:18.04 /bin/bash
-   70  docker ps
-   71  history 
-   72  docker ps
-   73  ps -ef | grep -i docker
-   74  docker inspect xyz
-   75  ifconfig
-   76  apt install net-tools
-   77  ifconfig
-   78  docker ps
-   79  docker stop d72e211e1e44
-   80  ifconfig
-   81  docker pdocker p
-   82  docker ps
-   83  docker run -d httpd
-   84  docker ps
-   85  docker logs 0861eaa67b0b
-   86  docker ps 
-   87  docker kill 8870c262abec
-   88  docker ps
-   89  docker ps -a
-   90  history 
+    5    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    6  apt-get update
+    7  apt-get install docker-ce docker-ce-cli containerd.io
+    8  docker ps
+    9  docker version
+   10  docker images
+   11  docker search ubuntu
+   12  docker pull ubuntu
+   13  docker pull ubuntu:18.04
+   14  docker images
+   15  docker run -it ubuntu:18.04 /bin/bash
+   16  docker ps
+   17  docker ps -a
+   18  docker run -dit ubuntu:18.04 /bin/bash
+   19  docker ps
+   20  ps -ef| grep -i docker
+   21  docker ps
+   22  ps -ef| grep -i 85140fab2012
+   23  docker exec -it 85140fab2012 /bin/bash
+   24  docker ps
+   25  docker pull httpd
+   26  docker ps
+   27  docker run -d httpd
+   28  docker ps
+   29  docker exec -it c5c293f702c3 /bin/bash
+   30  ps -ef | grep -i container
+   31  kill -9 15078
+   32  ps -ef | grep -i container
+   33  docker ps
+   34  ps -ef | grep -i container
+   35  docker ps
+   36  docker ps -a
+   37  ps -ef | grep -i docker
+   38  systemctl restart docker
+   39  docker ps
+   40  docker run -d httpd
+   41  docker ps
+   42  ps -ef | grep -i docker
+   43  ps -ef | grep -i container
+   44  date
+   45  kill -9 15946
+   46  ps -ef | grep -i container
+   47  docker ps
+   48  kill -9 2154
+   49  docker ps
+   50  free -m
+   51  docker ps
+   52  ps -ef | grep -i container
+   53  docker ps
+   54  docker  ps -a
+   55  docker run -it ubuntu:18.04 /bin/bash
+   56  docker run -itd ubuntu:18.04 /bin/bash
+   57  docker ps
+   58  docker stop 33680043cbec
+   59  docker ps
+   60  docker ps -a
+   61  docker start 33680043cbec
+   62  docker ps
+   63  docker run -itd ubuntu:18.04 /bin/bash
+   64  docker ps
+   65  docker exec -it d72e211e1e44 /bin/bash
+   66  docker run -itd --name sudhanshu  ubuntu:18.04 /bin/bash
+   67  docker ps
+   68  docker stop 33680043cbec e0d52c0b9560 d6d441169a90
+   69  docker ps
+   70  docker run -itd --name xyz  ubuntu:18.04 /bin/bash
+   71  docker ps
+   72  history 
+   73  docker ps
+   74  ps -ef | grep -i docker
+   75  docker inspect xyz
+   76  ifconfig
+   77  apt install net-tools
+   78  ifconfig
+   79  docker ps
+   80  docker stop d72e211e1e44
+   81  ifconfig
+   82  docker pdocker p
+   83  docker ps
+   84  docker run -d httpd
+   85  docker ps
+   86  docker logs 0861eaa67b0b
+   87  docker ps 
+   88  docker kill 8870c262abec
+   89  docker ps
+   90  docker ps -a
+   91  history 
+   92  apt-get install terraform
+   93  docker ps
+   94  docker images
+   95  docker rmi 5a214d77f5d7
+   96  docker rmi ba6acccedd29 
+   97  docker images
+   98  ls -l /var/lib/docker/
+   99  docker ps
+  100  docker inspect 0861eaa67b0b
+  101  curl -v http://172.17.0.3
+  102  ifconfig
+  103  docker images
+  104  docker run -d -p 80:80 httpd
+  105  docker ps
+  106  docker exec -it bda5b136b34d /bin/bash
+  107  docker run -d -p 8080:80 httpd
+  108  docker ps
+  109  docker run -d -p 8080:80 httpd
+  110  netstat -tunlp
+  111  docker ps
+  112  ifconfig
+  113  docker ps
+  114  docker images
+  115  docker search ubuntu
+  116  docker images
+  117  docker tag ubuntu ankushgupta0727/ubuntu:testing
+  118  docker tag ubuntu:18.04 ankushgupta0727/ubuntu:testing
+  119  docker images
+  120  docker login
+  121  docker push ankushgupta0727/ubuntu:testing
+  122  docker tag ubuntu:18.04 ankushgupta0727/ubuntu:v1
+  123  docker push ankushgupta0727/ubuntu:v1
+  124  docker ps
+  125  dockeer exec -it 09f881a0a991 /bin/bash
+  126  docker exec -it 09f881a0a991 /bin/bash
+  127  docker ps
+  128  docker commit 09f881a0a991 apache-testing:latest
+  129  docker images
+  130  docker tag apache-testing ankushgupta0727/apache-testing:v1
+  131  docker push ankushgupta0727/apache-testing:v1
+  132  docker pull registry
+  133  docker images
+  134  docker search jenkins
+  135  docker run -d jenkins/jenkins:lts
+  136  docker ps
+  137  docker stop 0861eaa67b0b bda5b136b34d 7165f9384ebc f92175569f17
+  138  docker os
+  139  docker ps
+  140  docker images
+  141  docker run -d -p 5000:5000 registry
+  142  docker ps
+  143  docker tag ubuntu:18.04 localhost:5000/ubuntu:18.04
+  144  docker push localhost:5000/ubuntu:18.04
+  145  docker images
+  146  docker rmi 5a214d77f5d7 ad17c88403e2 2a4bbe50c40b 62d43660a5d4 62d43660a5d4
+  147  docker rmi 5a214d77f5d7 ad17c88403e2 2a4bbe50c40b 62d43660a5d4 62d43660a5d4 -f
+  148  docker images
+  149  docker rmi localhost:5000/ubuntu ankushgupta0727/ubuntu:testing ankushgupta0727/ubuntu:v1
+  150  docker images
+  151  docker rmi localhost:5000/ubuntu:18.04
+  152  docker images
+  153  docker pull localhost:5000/ubuntu:18.04
+  154  docker images
+  155  docker run -d -it localhost:5000/ubuntu:18.04 /bin/bash
+  156  docker ps
+  157  docker run -d ubuntu "echo helloworld"
+  158  docker run -d ubuntu echo helloworld
+  159  docker logs 71bfca9a64e9a795ed5c207c29eb3d8166f2c55ae95086c2c029d8a37444ce40
+  160  docker ps
+  161  docker run -d ubuntu top
+  162  docker logs 71360f70644655e8564b3e3b9eb34842baa252f8906702d97be4b912f49057df
+  163  docker run -d ubuntu echo rahul
+  164  docker logs 5608bde7fcc3db76aa9c30d9ebd64746f9af5703931cfbe8e20a0ef57f353bb0
+  165  vim Dockerfile
+  166  docker build -t customimage .
+  167  vim Dockerfile
+  168  docker build -t customimage .
+  169  vim Dockerfile
+  170  docker build -t customimage .
+  171  echo "hello world" > index.html
+  172  vim Dockerfile 
+  173  docker build -t customimage .
+  174  docker images
+  175  docker run -d -p 8081:80 customimage
+  176  docker ps
+  177  docker run -d -p 8082:80 customimage echo vipin
+  178  docker ps
+  179  docker logs 09afcdd82903be717013538254d2b086a2f12712551c0b78912147656141b952
+  180  vim Dockerfile 
+  181  docker build -t customimage .
+  182  docker run -d -p 8082:80 customimage echo vipin
+  183  docker ps
+  184  docker logs a075baeff2b3
+  185  docker images
+  186  history 
