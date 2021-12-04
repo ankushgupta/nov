@@ -185,3 +185,87 @@ root@ip-172-31-4-137:~# history
   184  docker logs a075baeff2b3
   185  docker images
   186  history 
+  187  docker volume ls
+  188  docker volume create myvol
+  189  docker volume ls
+  190  docker run -d --mount 
+  191  docker run --help
+  192  docker run  --mount --help
+  193  docker man
+  194  man docker
+  195  docker  --help
+  196  docker volume --help
+  197  docker run --help
+  198  docekr run -d -it --mount source=myvol,destination=/tmp ubuntu /bin/bash
+  199  docker run -d -it --mount source=myvol,destination=/tmp ubuntu /bin/bash
+  200  docker ps
+  201  docker exec -it ea1d7d686a42 /bin/bash
+  202  cd /var/lib/docker/
+  203  ls -l
+  204  cd volumes/
+  205  ls -l
+  206  cd myvol/
+  207  ls -l
+  208  cd _data/
+  209  ls -l
+  210  docker ps
+  211  docker stop ea1d7d686a42; docker rm ea1d7d686a42
+  212  ls -l
+  213  cd 
+  214  mdkir /data
+  215  mkdir /data
+  216  docker run -d -it -v /data:/tmp ubuntu /bin/bash
+  217  cd /data
+  218  ls -l
+  219  touch a b c d e t g
+  220  ls -l
+  221  docker ps
+  222  docker exec -it d56ae82a0056 /bin/bash
+  223  docker info
+  224  docker network ls
+  225  docker network inspect 0ff69f6aa7bf
+  226  docker  network create mynet
+  227  docker network ls
+  228  docker network inspect 7e023508fdf9
+  229  docker network --help
+  230  docker network create --help
+  231  docker run -d -it -network=mynet ubuntu /bin/bash
+  232  docker run -d -it --network=mynet ubuntu /bin/bash
+  233  docker inspect 4b7b64e8aeef6e207383786cae1bbe398a5186434bcf2aa1f59a5abe8d2931db
+  234  pwd
+  235  docker run -itd ubuntu:18.04 ubuntu:20.04
+  236  docker run -itd ubuntu:18.04 ubuntu:latest
+  237  docker run -it --name --link ubuntu:18.04
+  238  curl -L https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+  239  ls -l /usr/local/bin/docker-compose
+  240  chmod +x /usr/local/bin/docker-compose
+  241  docker-compose version
+  242  vi docker-compose.yml
+  243  docker-compose up
+  244  vi docker-compose.yml
+  245  docker-compose up
+  246  vi docker-compose.yml
+  247  docker-compose up
+  248  docker-compose up -d
+  249  docker ps
+  250  vi docker-compose.yml 
+  251  docker-compose stop
+  252  docker volume create testvol
+  253  df -h
+  254  docker volume create --help
+  255  docker run -d -it --mount source=testvol,destination=/tmp ubuntu /bin/bash
+  256  cd /var/lib/docker/volumes/
+  257  ls -
+  258  ls -l
+  259  cd testvol/
+  260  ls -l
+  261  _dvd_devices 
+  262  cd _data/
+  263  ls -l
+  264  touch q w e r t y u
+  265  ls -l
+  266  docker exec -it b075db2891388d511811122e91933740a58bea94007313b3df455a0c712091c4 /bin/bash
+  267  ls -l
+  268  docker exec -it b075db2891388d511811122e91933740a58bea94007313b3df455a0c712091c4 /bin/bash
+  269  history 
+
