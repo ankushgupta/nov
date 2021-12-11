@@ -1,0 +1,6 @@
+---
+- hosts: ip-172-31-11-126
+  name: playbook for apache
+  become: yes
+  roles:
+    - apache2
