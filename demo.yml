@@ -1,0 +1,17 @@
+---
+- hosts: ip-172-31-11-126
+  name: playbook for apache
+  become: yes
+  tasks:
+    - name: install apache2
+      apt: name=apache2 state=present
+    - name: copy configuration
+      copy: src=apache2.conf dest=/etc/apache2
+      notify:
+        - restart apache2 service
+    - name: start apache2
+      service: name=apache2 state=started
+
+  handlers:
+    - name: restart apache2 service
+      service: name=apache2 state=restarted
