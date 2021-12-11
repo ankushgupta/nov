@@ -1,0 +1,120 @@
+ 278  ssh-keygen 
+  279  cd .ssh
+  280  ls -l
+  281  cat id_rsa.pub
+  282  ssh root@172.31.11.126
+  283  cd
+  284  apt-get install ansible
+  285  cd /etc/ansible/
+  286  ls -l
+  287  vi hosts
+  288  ansible localhost
+  289  ansible ip-172-31-11-126 -m command -a "df -h"
+  290  ansible ip-172-31-11-126 -m apt -a "name=git state=present"
+  291  ansible ip-172-31-11-126 -m package -a "name=git state=present"
+  292  ansible ip-172-31-11-126 -m setup
+  293  ansible localhost -m setup
+  294  cd
+  295  cd .ssh
+  296  ls -l
+  297  cat id_rsa.pub 
+  298  vi authorized_keys 
+  299  cd
+  300  cd /etc/ansible/
+  301  ssh localhost
+  302  vi demo.yml
+  303  ansible-playbook demo.yml --syntax-check
+  304  vi demo.yml
+  305* 
+  306  ansible-playbook demo.yml 
+  307  ******************************************************************************************************************
+  308  ok: [ip-172-31-11-126]
+  309  TASK [install apache2] ******************************************************************************************************************
+  310  ansible-playbook demo.yml 
+  311  vim demo.yml 
+  312  ansible-playbook demo.yml 
+  313  scp root:1p-172-31-11-126:/etc/apache2/apache2.conf .
+  314  scp root:ip-172-31-11-126:/etc/apache2/apache2.conf .
+  315  scp root@ip-172-31-11-126:/etc/apache2/apache2.conf .
+  316  vi demo.yml 
+  317  ansible-playbook demo.yml 
+  318  vi apache2.conf 
+  319  ansible-playbook demo.yml 
+  320  vi demo.yml 
+  321  ansible-playbook demo.yml 
+  322  vi demo.yml 
+  323  ansible-playbook demo.yml 
+  324  vi apache2.conf 
+  325  ansible-playbook demo.yml 
+  326  ansible localhost -m command -a "touch /tmp/a"
+  327  ls -l /tmp
+  328  date
+  329  ansible localhost -m command -a "touch /tmp/a"
+  330  ls -l /tmp
+  331  ansible ip-172-31-11-126 -m package -a "name=git state=present"
+  332  ls -l
+  333  mkdir roles
+  334  cd roles
+  335  ansible-galaxy init apache2 --offline
+  336  ls -l
+  337  cd apache2/
+  338  ls -l
+  339  cat /etc/ansible/demo.yml 
+  340  ls -l
+  341  cd tasks/
+  342  ls -l
+  343  vim main.yml 
+  344  cd ..
+  345  cd handlers/
+  346  vim main.yml 
+  347  cd ..
+  348  cd files
+  349  ls -l
+  350  cp /etc/ansible/apache2.conf .
+  351  vim index.html
+  352  cd ..
+  353  cd tasks/
+  354  vim main.yml 
+  355  cd ..
+  356  cp demo.yml demo1.yml 
+  357  vim demo1.yml 
+  358  ansible-playbook demo1.yml 
+  359  vi roles/apache2/tasks/main.yml 
+  360  ansible-playbook demo1.yml 
+  361  cd roles/
+  362  ls -l
+  363  cd apache2/
+  364  cd vars
+  365  ls -l
+  366  vim main.yml 
+  367  cd 
+  368  cd -
+  369  cd ..
+  370  cd templates/
+  371  ls -l
+  372  vim index.html
+  373  cd ..
+  374  cd tasks/
+  375  vim main.yml 
+  376  cd ../templates/
+  377  ls -l
+  378  mv index.html index.html.j2
+  379  cd
+  380  cd /etc/ansible/
+  381  ansible-playbook demo1.yml 
+  382  cd roles/
+  383  l;s -l
+  384  cd apache2/vars/
+  385  vim main.yml 
+  386  cd ../..
+  387  cd ..
+  388  ansible-playbook demo1.yml 
+  389  vi roles/apache2/tasks/main.yml 
+  390  ansible-playbook demo1.yml 
+  391  cd roles/apache2/tasks/
+  392  vim main.yml 
+  393  cd ../files/
+  394  vi index.html 
+  395  cd ../../..
+  396  ansible-playbook demo1.yml 
+  397  history 
